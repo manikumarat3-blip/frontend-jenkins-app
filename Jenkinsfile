@@ -12,10 +12,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                sudo cp -r * /usr/share/nginx/html/
+                cp -r * /usr/share/nginx/html/
                 '''
             }
         }
     }
 }
-
